@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Anton&family=Changa:wght@300;400&family=El+Messiri:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Mada:wght@500&family=Oleo+Script&family=Oswald:wght@200;300&family=Reem+Kufi:wght@700&family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@300&family=Rubik+Moonrocks&display=swap');
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        #background{
+            background-color: white;
+            width: 400px;
+            margin: 0 auto;
+        }
+        header{
+            overflow: hidden;
+        }
+        header img{
+            width: 100%;
+            height: 250px;
+            transform: scale(1.1);
+            
+        }
+        header img:hover{
+            transform: scale(1.2);
+        }
+        .content{
+            
+            width: 100%;
+            height: 400px;
+        }
+        .icon-mucis{
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+
+        }
+        .icon-mucis i{
+            font-size: 30px;
+        }
+        .play{
+            margin: 0 30px;
+            width: 22px;
+        }
+        .icon-mucis i:hover{
+            color:blue;
+            cursor: pointer;
+        }
+
+
+        .icon-range{
+            text-align: center;
+        }
+        input[type="range" i] {
+            -webkit-appearance:none;
+            cursor: pointer;
+            border: 1px solid rgb(0, 17, 255);
+            height: 8px;
+            border-radius: 5px;
+            margin: 0;
+            width: 90%;
+        }
+        .icon-range h2{
+            margin: 6px 0;
+            font-family: 'Mada', sans-serif;
+        }
+        #color{
+            text-align: center;
+            margin-top: 25px;
+        }
+        #color button{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 0;
+        }
+        .color1{
+            background-color: red;
+        }
+        .color2{
+            background-color: rgb(248, 223, 1);
+        }
+        .color3{
+            background-color: rgb(216, 211, 211);
+        }
+        .color4{
+            background-color: green;
+        }
+        .text{
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Mada', sans-serif;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <main id="background">
+            <header>
+                <img src="musicImg.png" alt="">
+            </header>
+            <article class="content">
+                <div class="icon-mucis">
+                    <i id="back" class="fa-solid fa-backward-step"></i>
+                    <i id="playx" class="fa-solid fa-play play"></i>
+                    <i id="next" class="fa-solid fa-forward-step"></i>
+                    <audio id="mucis" src="music6.m4a"></audio>
+                </div>
+                <div class="icon-range">
+                    <h2>الصوت</h2>
+                    <input type="range" name="" id="volume_range">
+                    <h2>السرعة</h2>
+                    <input type="range" name="" id="playbackRate" max="200" min="0">
+                </div>
+                <div id="color">
+                    <button class="color1"></button>
+                    <button class="color2"></button>
+                    <button class="color3"></button>
+                    <button class="color4"></button>
+                </div>
+                <div class="text"><h1>اغاني المفضلة</h1></div>
+                
+            </article>
+            
+        </main>
+
+        <main id="mainMap">
+
+        </main>
+
+        <script src="script3.js"></script>
+        <script src="script4.js"></script>
+        <script src="script5.js"></script>
+
+
+    </body>
+
+
+
+
+
+
+</html>
